@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 1st Monthsary!</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Dancing+Script&family=Caveat&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="bow">🎀</div>
+  <h1>HAPPY 1<sup>ST</sup><br>MONTHSARY!</h1>
+
+  <div class="hero-photo">
+    <img src="Image29.jpg" alt="favorite picture">
+  </div>
+</div>
+
+<!-- LETTER -->
+<div class="envelope-section">
+  <div class="to-label">To : Peks!</div>
+
+  <div class="envelope-wrapper">
+    <div class="envelope open" id="letterEnvelope" onclick="toggleEnvelope('letterEnvelope')">
+      <div class="env-body">
+
+        <div class="env-flap">
+          <svg viewBox="0 0 600 90" preserveAspectRatio="none">
+            <polygon points="0,0 600,0 300,90"/>
+          </svg>
+        </div>
+
+        <div class="letter-peek">
+          <div class="letter-card">
+            <p><strong>Happy happy first monthsary, Peksss!!</strong></p>
+            <p class="letter-body">
+              Meeting you was the best thing in my life.  
+              I’ll always be here supporting you. 💖
+            </p>
+          </div>
+        </div>
+
+        <div class="env-bottom-strip">TO BE CONTINUE……</div>
+      </div>
+    </div>
+
+    <p class="env-hint">🎀 Click the envelope to read the letter</p>
+  </div>
+</div>
+
+<!-- PHOTO GRID -->
+<div class="section">
+  <div class="photo-grid">
+    <div class="polaroid" onclick="openLightbox(0)">
+      <div class="polaroid-img">
+        <img src="Image16.jpg">
+      </div>
+      <span class="polaroid-label">first lean ;)</span>
+    </div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightboxBtn()">✕</button>
+    <img class="lightbox-img" id="lightboxImg">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
